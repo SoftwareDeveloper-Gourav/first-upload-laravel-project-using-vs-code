@@ -20,7 +20,7 @@ class Join extends Controller
    $data_save->password=md5($data->password);
    $data_save->registration_number=$reg;
    $data_save->save();
-   return redirect()->back()->with('store','Student Registered , Registration No = '.$reg);
+   return redirect()->back()->with('store','Student Registered Successfully, Registration No = '.$reg);
 
 
       }
